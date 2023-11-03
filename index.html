@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ln="eng">
+<head>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">San Tosh</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+  <div class="s">
+      <div id="container">
+        Make
+        <div id="flip">
+            <div>
+                <div>Work</div>
+            </div>
+            <div>
+                <div>Lifestyle</div>
+            </div>
+            <div>
+                <div>Everything</div>
+            </div>
+        </div>
+        AweSome!
+    </div>
+  </div>
+  <script>
+          // Get the icon element
+const icon = document.getElementById('icon');
+
+// Add an event listener for the click event
+icon.addEventListener('click', () => {
+  const nav = document.querySelector('ul');
+  nav.classList.toggle('show');
+});
+  </script>
+</body>
+</html>
