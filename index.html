@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html ln="eng">
 <head>
-  <title>My Blog</title>
+  <title>San Tosh Blog</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
+    <header>
     <nav>
-        <label class="logo">San Tosh</label>
+        <label class="logo">San Tosh Blog</label>
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
@@ -16,9 +16,11 @@
             <li><a href="#">Feedback</a></li>
         </ul>
         <label id="icon">
-            <i class="fa-solid fa-bars"></i>
+            <img class="btn" src="icon.png">
         </label>
     </nav>
+    </header>
+    <main>
   <div class="s">
       <div id="container">
         Make
@@ -36,15 +38,16 @@
         AweSome!
     </div>
   </div>
+  </main>
   <script>
-          // Get the icon element
 const icon = document.getElementById('icon');
+const nav =document.querySelector('ul');
+icon.addEventListener('click', show);
 
-// Add an event listener for the click event
-icon.addEventListener('click', () => {
-  const nav = document.querySelector('ul');
-  nav.classList.toggle('show');
-});
+function show(){
+    nav.classList.toggle('show');
+};
+
   </script>
 </body>
 </html>
